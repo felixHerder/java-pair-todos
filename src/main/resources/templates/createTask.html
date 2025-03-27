@@ -6,7 +6,14 @@
 </head>
 <body>
 
-<>
+<form method="post" th:object="${todo}" action="">
+    <form>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="fname"><br>
+        <label for="content">Content:</label><br>
+        <input type="text" id="content" name="lname">
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>
