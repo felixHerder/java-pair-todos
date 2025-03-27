@@ -19,7 +19,6 @@ public class AppConfig {
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/").permitAll()
                         .anyRequest().authenticated()
                 );
         return http.build();

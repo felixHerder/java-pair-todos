@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>UsersList</title>
+</head>
+<body>
+
+<table>
+  <thead>
+    <th>Username</th>
+    <th>Tasks</th>
+    <th>Add</th>
+  </thead>
+
+  <tbody>
+    <tr th:each="user : ${users}">
+      <td th:text="${user.username}"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
